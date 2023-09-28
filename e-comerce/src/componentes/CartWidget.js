@@ -6,3 +6,4 @@ const CartWidget = ({cant}) => {
         </div>
     )
 }
+export default CartWidget
