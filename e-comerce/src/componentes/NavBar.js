@@ -27,7 +27,7 @@ const NavBar = ()=>{
                 </ul>
             </li>
             <li>
-                <CartWidget cant="{5}"/>
+                <CartWidget cant="5"/>
             </li>
             <li class="menu-item">
                 <a href="#">
