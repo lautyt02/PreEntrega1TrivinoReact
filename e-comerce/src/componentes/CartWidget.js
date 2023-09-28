@@ -1,7 +1,8 @@
+import carritoImg from '../../public/carrito.png'
 const CartWidget = ({cant}) => {
     return (
         <div className='carrito-widget'>
-            <img src="/public/carrito.png"/>
+            <img src={carritoImg}/>
             <p>{cant}</p>
         </div>
     )
