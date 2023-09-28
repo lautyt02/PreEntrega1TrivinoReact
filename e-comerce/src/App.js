@@ -1,10 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import NavBar from './componentes/NavBar.js'
+import CartWidget from './componentes/CartWidget.js'
+import ItemListContainer from './componentes/ItemListContainer.js'
+import '/node_modules/bootstrap/dist/css/bootstrap.css'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +24,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
