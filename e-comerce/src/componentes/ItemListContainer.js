@@ -5,3 +5,4 @@ const ItemListContainer=({contenido})=>{
         </section>
     )
 }
+export default ItemListContainer
