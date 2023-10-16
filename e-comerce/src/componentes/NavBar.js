@@ -1,8 +1,9 @@
 import CartWidget from "./CartWidget.js"
+import logoImg from "../images/logo-fhierros.png"
 const NavBar = ()=>{
     return (
         <nav class="navbar">
-        <img src="/public/logo-fhierros.png" alt="logo de FHierro's" class="logo"/>
+        <img src={logoImg} alt="logo de FHierro's" class="logo"/>
         <ul class="menu">
             <li class="menu-item">
                 <a href="#">
