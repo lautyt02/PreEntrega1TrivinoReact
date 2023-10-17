@@ -1,42 +1,108 @@
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap"
+import "../css/mi-css.css"
 import CartWidget from "./CartWidget.js"
 import logoImg from "../images/logo-fhierros.png"
-const NavBar = ()=>{
+
+const MiNavBar = ({ nombre }) => {
     return (
-        <nav class="navbar">
-        <img src={logoImg} alt="logo de FHierro's" class="logo"/>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#">
-                    <h2>FHierro's</h2>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#">
-                    <h2>Productos</h2>
-                </a>
-                <ul>
-                    <li >
-                        <a href="#">
-                            <h3>Herreria</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h3>Automatización</h3>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <CartWidget cant="5"/>
-            </li>
-            <li class="menu-item">
-                <a href="#">
-                    <h2>Contacto</h2>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <nav className="navbar">
+            <img src={logoImg} alt="logo de FHierro's" className="logo" />
+            <ul className="menu">
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>{nombre}</h2>
+                    </a>
+                </li>
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>Productos</h2>
+                    </a>
+                    <ul>
+                        <li >
+                            <a href="#">
+                                <h3>Herreria</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Automatización</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <CartWidget cant="5" />
+                </li>
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>Contacto</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     )
 }
-export default NavBar
+export default MiNavBar
+
+
+// 
+{/* <nav className="navbar">
+            <img src={logoImg} alt="logo de FHierro's" class="logo" />
+            <ul className="menu">
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>FHierro's</h2>
+                    </a>
+                </li>
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>Productos</h2>
+                    </a>
+                    <ul>
+                        <li >
+                            <a href="#">
+                                <h3>Herreria</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Automatización</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <CartWidget cant="5" />
+                </li>
+                <li className="menu-item">
+                    <a href="#">
+                        <h2>Contacto</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav> */}
+
+//     <Navbar expand="lg" className="bg-body-tertiary">
+//     <Container>
+//       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//       <Navbar.Collapse id="basic-navbar-nav">
+//         <Nav className="me-auto">
+//           <Nav.Link href="#home">Home</Nav.Link>
+//           <Nav.Link href="#link">Link</Nav.Link>
+//           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+//             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+//             <NavDropdown.Item href="#action/3.2">
+//               Another action
+//             </NavDropdown.Item>
+//             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+//             <NavDropdown.Divider />
+//             <NavDropdown.Item href="#action/3.4">
+//               Separated link
+//             </NavDropdown.Item>
+//           </NavDropdown>
+//         </Nav>
+//       </Navbar.Collapse>
+//     </Container>
+//   </Navbar>
