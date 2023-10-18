@@ -1,7 +1,12 @@
+.App{
+    display: grid;
+    
+}
 .nabvar{
-    display: flex;
-    flex-direction: row;
 }
 .logo {
     width: 300px;
+}
+.mi-footer{
+
 }
