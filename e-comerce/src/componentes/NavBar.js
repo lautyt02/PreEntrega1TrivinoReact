@@ -3,41 +3,47 @@
 import "../css/mi-css.css"
 import CartWidget from "./CartWidget.js"
 import logoImg from "../images/logo-fhierros.png"
-
+import { NavLink } from "react-router-dom"
+import React from "react"
 const MiNavBar = ({ nombre }) => {
     return (
         <nav className="navbar">
-            <img src={logoImg} alt="logo de FHierro's" className="logo" />
+            <NavLink to={'/'}>
+                <img src={logoImg} alt="logo de FHierro's" className="logo" />
+            </NavLink>
             <ul className="menu">
+
                 <li className="menu-item">
-                    <a href="#">
+                    <NavLink to={'/'}>
                         <h2>{nombre}</h2>
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="menu-item">
-                    <a href="#">
+                    <NavLink to={'/'}>
                         <h2>Productos</h2>
-                    </a>
+                    </NavLink>
                     <ul>
                         <li >
-                            <a href="#">
+                            <NavLink to={'/category/herreria'}>
                                 <h3>Herreria</h3>
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="#">
+                            <NavLink to={'/category/automatizacion'}>
                                 <h3>Automatización</h3>
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <CartWidget cant="5" />
+                    <NavLink to={'/carrito/'}>
+                        <CartWidget cant="5" />
+                    </NavLink>
                 </li>
                 <li className="menu-item">
-                    <a href="#">
+                    <NavLink to={"/contacto/"}>
                         <h2>Contacto</h2>
-                    </a>
+                    </NavLink>
                 </li>
             </ul>
         </nav>
