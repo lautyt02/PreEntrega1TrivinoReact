@@ -10,3 +10,7 @@
 .mi-footer{
 
 }
+.item-card{
+    border-radius: 25px;
+    background-color: lightblue;
+}
