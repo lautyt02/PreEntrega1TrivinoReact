@@ -19,9 +19,7 @@ const MiNavBar = ({ nombre }) => {
                     </NavLink>
                 </li>
                 <li className="menu-item">
-                    <NavLink to={'/'}>
-                        <h2>Productos</h2>
-                    </NavLink>
+                    <h2>Productos</h2>
                     <ul>
                         <li >
                             <NavLink to={'/category/herreria'}>

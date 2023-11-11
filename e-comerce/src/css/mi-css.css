@@ -5,8 +5,10 @@
 }
 .App-header {
     display: block;
+    min-height: 0;
 }
 .mi-navbar{
+    color: black;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -36,8 +38,8 @@
     color: black;
     text-decoration: none;
 }
-.mi-navbar a:hover h2, .mi-navbar a:hover h3 {
-    font-weight: 1000;
+.mi-navbar h2:hover , .mi-navbar h3:hover {
+    font-weight: 950;
 }
 .mi-navbar .menu-item ul{
     display: flex;
