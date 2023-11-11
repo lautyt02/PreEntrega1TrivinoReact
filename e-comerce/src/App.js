@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import "./css/mi-css.css"
 import MiNavBar from './componentes/NavBar'
 import ItemListContainer from './componentes/ItemListContainer'
 import MiFooter from './componentes/Footer'
@@ -30,7 +31,7 @@ function App() {
 
 export default App
 
-{/* <div className="App">
+/* <div className="App">
         <header className="App-header">
           <MiNavBar nombre="FHierro's" />
         </header>
@@ -38,4 +39,4 @@ export default App
           <ItemListContainer contenido="Holaaaa" />
         </section>
         <MiFooter />
-      </div> */}
+      </div> */

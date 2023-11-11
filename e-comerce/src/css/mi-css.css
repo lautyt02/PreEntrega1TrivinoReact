@@ -1,16 +1,61 @@
 .App{
     display: grid;
+    font-size: 24px;
     
 }
-.nabvar{
+.App-header {
+    display: block;
+}
+.mi-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content:space-around;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 15vh;
+    max-height: 25vh;
+    font-size: 0.8rem;
+}
+.mi-navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: baseline;
+    align-content: space-between;
+}
+.mi-navbar h2, .mi-navbar h3, .mi-navbar p{
+    font-weight: 700;
+}
+.mi-navbar li {
+    margin-left: 2rem;
+}
+.mi-navbar a{
+    color: black;
+    text-decoration: none;
+}
+.mi-navbar a:hover h2, .mi-navbar a:hover h3 {
+    font-weight: 1000;
+}
+.mi-navbar .menu-item ul{
+    display: flex;
+    flex-direction: column;
 }
 .logo {
-    width: 300px;
+    width: 200px;
 }
 .mi-footer{
-
+  background-color: green;
 }
 .item-card{
     border-radius: 25px;
     background-color: lightblue;
+}
+.carrito-widget img{
+    height: 2rem;
+}
+.carrito-widget p{
+    color: black;
 }

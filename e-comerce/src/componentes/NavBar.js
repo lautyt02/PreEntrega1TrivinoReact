@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom"
 import React from "react"
 const MiNavBar = ({ nombre }) => {
     return (
-        <nav className="navbar">
+        <nav className="mi-navbar">
             <NavLink to={'/'}>
                 <img src={logoImg} alt="logo de FHierro's" className="logo" />
             </NavLink>
@@ -35,14 +35,14 @@ const MiNavBar = ({ nombre }) => {
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <NavLink to={'/carrito/'}>
-                        <CartWidget cant="5" />
-                    </NavLink>
-                </li>
                 <li className="menu-item">
                     <NavLink to={"/contacto/"}>
                         <h2>Contacto</h2>
+                    </NavLink>
+                </li>
+                <li className="menu-item">
+                    <NavLink to={'/carrito/'}>
+                        <CartWidget cant="5" />
                     </NavLink>
                 </li>
             </ul>
@@ -53,7 +53,7 @@ export default MiNavBar
 
 
 // 
-{/* <nav className="navbar">
+/* <nav className="navbar">
             <img src={logoImg} alt="logo de FHierro's" class="logo" />
             <ul className="menu">
                 <li className="menu-item">
@@ -87,7 +87,7 @@ export default MiNavBar
                     </a>
                 </li>
             </ul>
-        </nav> */}
+        </nav> */
 
 //     <Navbar expand="lg" className="bg-body-tertiary">
 //     <Container>
